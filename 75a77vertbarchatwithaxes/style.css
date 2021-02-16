@@ -1,9 +1,22 @@
+body {
+    background: darkslategrey;
+}
+
 h1 {
     text-align: center;
+    color: floralwhite;
 }
 
 svg {
-    background: chartreuse;
-    padding: 50px;
+    background: rgb(33, 85, 44);
+    color: cornsilk;
     margin: 10px;
+}
+
+rect {
+    fill: rgb(201, 198, 38);
+}
+
+yAxis {
+    font-size: medium;
 }
