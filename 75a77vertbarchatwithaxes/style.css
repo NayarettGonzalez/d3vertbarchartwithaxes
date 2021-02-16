@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+}
+
+svg {
+    background: chartreuse;
+    padding: 50px;
+    margin: 10px;
+}
