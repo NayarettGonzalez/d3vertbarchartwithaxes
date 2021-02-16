@@ -12,7 +12,7 @@ let xScale = d3.scaleLinear()
     .domain([d3.min(data, (d) => d.year), d3.max(data, (d) => d.year)])
     .range([0, width - spacing]);
 let yScale = d3.scaleLinear()
-    .domain([2500, 8000])
+    .domain([0, 8000])
     .range([height - spacing, 0]);
 
 let xAxis = d3.axisBottom(xScale)
@@ -22,7 +22,9 @@ let yAxis = d3.axisLeft(yScale)
 
 svg.append("g").attr("transform", "translate(30," + (height - spacing) + ")").call(xAxis);
 svg.append("g").call(yAxis);
-// d3.select("g path").remove();
+
+//Se remueve el eje X
+//d3.select("g path").remove();
 let rect = svg.selectAll("rect").data(data);
 rect.enter().append("rect")
     .attr("width", 30)
